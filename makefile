@@ -124,8 +124,8 @@ $(TARGET).dsk:		$(HELLO) $(OBJS)
 	@java -jar $(AC) -p $(OUTDIR)/$(TARGET).dsk title B 0x2000 < $(RESDIR)/images/title.hgr
 	@java -jar $(AC) -p $(OUTDIR)/$(TARGET).dsk end   B 0x2000 < $(RESDIR)/images/end.hgr
 	@java -jar $(AC) -p $(OUTDIR)/$(TARGET).dsk frame B 0x2000 < $(RESDIR)/images/frame.hgr
-	@java -jar $(AC) -p $(OUTDIR)/$(TARGET).dsk world B 0x0000 < download/world
-	@java -jar $(AC) -p $(OUTDIR)/$(TARGET).dsk user  B 0x0000 < download/user
+#	@java -jar $(AC) -p $(OUTDIR)/$(TARGET).dsk world B 0x0000 < download/world
+#	@java -jar $(AC) -p $(OUTDIR)/$(TARGET).dsk user  B 0x0000 < download/user
 #	@java -jar $(AC) -l $(OUTDIR)/$(TARGET).dsk
 
 ##  $(LD) $(LDFLAGS) -o $(BINDIR)/$(TARGET) -m $(BINDIR)/$(TARGET).map --config $(CFGDIR)/$(CONFIG).cfg --obj $(foreach file,$(OBJS),$(OBJDIR)/$(file))
@@ -144,8 +144,13 @@ clean:
 ##		$(CC) $(CFLAGS) -MM $(foreach file,$(CSRCS),$(SRCDIR)/$(file)) > makefile.depend
 ##	endif
 
-# extract download disk
-extract:
+# import world and user file
+import:
+	@java -jar $(AC) -p $(OUTDIR)/$(TARGET).dsk world B 0x0000 < download/world
+	@java -jar $(AC) -p $(OUTDIR)/$(TARGET).dsk user  B 0x0000 < download/user
+
+# export download disk
+export:
 	@java -jar $(AC) -x ~/Downloads/$(TARGET).dsk download
 	@java -jar $(AC) -g ~/Downloads/$(TARGET).dsk world download/world
 	@java -jar $(AC) -g ~/Downloads/$(TARGET).dsk user download/user
