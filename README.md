@@ -1,0 +1,14 @@
+# BASIS
+
+[![mayQ](http://img.youtube.com/vi/*/0.jpg)](https://www.youtube.com/watch?v=*)
+
+## SIDELOAD
+Releases にある mayq-0_8_0.dsk ファイルをダウンロード、[Apple\]\[js](https://www.scullinsteel.com/apple2/) などの AppleII 環境で動かしてください。
+
+## 操作
+- `W`, `S`, `A`, `D`<br>上下左右に移動、停止
+- `I`, `K`, `J`, `L`<br>上下左右に移動、停止
+- `ESC`<br>ゲームの保存
+
+## 開発
+- [CC65](https://cc65.github.io)

@@ -1,0 +1,115 @@
+crt0.o              :   crt0.s \
+                        apple2.inc iocs.inc \
+                        lib.inc
+iocs.o              :   iocs.s iocs.inc \
+                        apple2.inc
+lib.o               :   lib.s lib.inc \
+                        apple2.inc iocs.inc
+world.o             :   world.s world.inc \
+                        apple2.inc iocs.inc
+user.o              :   user.s user.inc \
+                        apple2.inc iocs.inc
+app0.o              :   app0.s app0.inc \
+                        apple2.inc iocs.inc
+title.o             :   title.s title.inc \
+                        apple2.inc iocs.inc app0.inc
+app1.o              :   app1.s app1.inc \
+                        apple2.inc iocs.inc
+new.o               :   new.s new.inc \
+                        apple2.inc iocs.inc app1.inc \
+                        world.inc user.inc
+app2.o              :   app2.s app2.inc \
+                        apple2.inc iocs.inc
+game.o              :   game.s game.inc \
+                        apple2.inc iocs.inc app2.inc \
+                        world.inc user.inc \
+                        actor.inc
+actor.o             :   actor.s actor.inc \
+                        apple2.inc iocs.inc app2.inc \
+                        world.inc user.inc \
+                        game.inc
+actor_player.o      :   actor_player.s actor.inc \
+                        apple2.inc iocs.inc app2.inc \
+                        world.inc user.inc \
+                        game.inc
+actor_enemy.o       :   actor_enemy.s actor.inc \
+                        apple2.inc iocs.inc app2.inc \
+                        world.inc user.inc \
+                        game.inc
+actor_orc.o         :   actor_orc.s actor.inc \
+                        apple2.inc iocs.inc app2.inc \
+                        world.inc user.inc \
+                        game.inc
+actor_lizard.o      :   actor_lizard.s actor.inc \
+                        apple2.inc iocs.inc app2.inc \
+                        world.inc user.inc \
+                        game.inc
+actor_slime.o       :   actor_slime.s actor.inc \
+                        apple2.inc iocs.inc app2.inc \
+                        world.inc user.inc \
+                        game.inc
+actor_skeleton.o    :   actor_skeleton.s actor.inc \
+                        apple2.inc iocs.inc app2.inc \
+                        world.inc user.inc \
+                        game.inc
+actor_serpent.o     :   actor_serpent.s actor.inc \
+                        apple2.inc iocs.inc app2.inc \
+                        world.inc user.inc \
+                        game.inc
+actor_spider.o      :   actor_spider.s actor.inc \
+                        apple2.inc iocs.inc app2.inc \
+                        world.inc user.inc \
+                        game.inc
+actor_gremlin.o     :   actor_gremlin.s actor.inc \
+                        apple2.inc iocs.inc app2.inc \
+                        world.inc user.inc \
+                        game.inc
+actor_bat.o         :   actor_bat.s actor.inc \
+                        apple2.inc iocs.inc app2.inc \
+                        world.inc user.inc \
+                        game.inc
+actor_zorn.o        :   actor_zorn.s actor.inc \
+                        apple2.inc iocs.inc app2.inc \
+                        world.inc user.inc \
+                        game.inc
+actor_phantom.o     :   actor_phantom.s actor.inc \
+                        apple2.inc iocs.inc app2.inc \
+                        world.inc user.inc \
+                        game.inc
+actor_cyclopse.o    :   actor_cyclopse.s actor.inc \
+                        apple2.inc iocs.inc app2.inc \
+                        world.inc user.inc \
+                        game.inc
+actor_wizard.o      :   actor_wizard.s actor.inc \
+                        apple2.inc iocs.inc app2.inc \
+                        world.inc user.inc \
+                        game.inc
+actor_hydra.o       :   actor_hydra.s actor.inc \
+                        apple2.inc iocs.inc app2.inc \
+                        world.inc user.inc \
+                        game.inc
+actor_devil.o       :   actor_devil.s actor.inc \
+                        apple2.inc iocs.inc app2.inc \
+                        world.inc user.inc \
+                        game.inc
+actor_dragon.o      :   actor_dragon.s actor.inc \
+                        apple2.inc iocs.inc app2.inc \
+                        world.inc user.inc \
+                        game.inc
+actor_tree.o        :   actor_tree.s actor.inc \
+                        apple2.inc iocs.inc app2.inc \
+                        world.inc user.inc \
+                        game.inc
+actor_rock.o        :   actor_rock.s actor.inc \
+                        apple2.inc iocs.inc app2.inc \
+                        world.inc user.inc \
+                        game.inc
+actor_cactus.o      :   actor_cactus.s actor.inc \
+                        apple2.inc iocs.inc app2.inc \
+                        world.inc user.inc \
+                        game.inc
+actor_ball.o        :   actor_ball.s actor.inc \
+                        apple2.inc iocs.inc app2.inc \
+                        world.inc user.inc \
+                        game.inc
+
