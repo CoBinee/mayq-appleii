@@ -1,6 +1,6 @@
 # BASIS
 
-[![mayQ](http://img.youtube.com/vi/*/0.jpg)](https://www.youtube.com/watch?v=*)
+[![mayQ](http://img.youtube.com/vi/0P-EIjS2pT8/0.jpg)](https://www.youtube.com/watch?v=0P-EIjS2pT8)
 
 ## SIDELOAD
 Releases にある mayq-0_8_0.dsk ファイルをダウンロード、[Apple\]\[js](https://www.scullinsteel.com/apple2/) などの AppleII 環境で動かしてください。
